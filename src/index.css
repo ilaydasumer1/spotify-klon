@@ -1,0 +1,18 @@
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html, body, #root {
+    height: 100%;  /* Sayfa yüksekliğini 100% olarak ayarlayın */
+  }
+  #root {
+    @apply flex flex-col bg-backdrop text-white antialiased;
+  }
+  .wrapper {
+    flex: 1; /* .container'ı tüm boşluğu kaplayacak şekilde genişletin */
+    @apply flex;
+}
+
+}
+
